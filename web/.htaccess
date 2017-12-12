@@ -50,3 +50,8 @@ DirectoryIndex app_dev.php
         # RedirectTemp cannot be used instead
     </IfModule>
 </IfModule>
+
+php_value upload_max_filesize 25M
+php_value post_max_size 200M
+php_value max_file_uploads 200
+

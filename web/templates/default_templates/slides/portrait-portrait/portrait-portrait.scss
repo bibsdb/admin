@@ -1,0 +1,166 @@
+@import "compass/css3";
+@import "../../../_shared-base.scss";
+
+
+@font-face {
+  font-family: 'Conv_TipoType - Brother-1816-Book';
+  src: url('https://admin-sonderborg.teknik.local/assets/fonts/TipoType - Brother-1816-Book.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Conv_TipoType - Brother-1816-ExtraBold';
+  src: url('https://admin-sonderborg.teknik.local/assets/fonts/TipoType - Brother-1816-ExtraBold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+.portrait-portrait {
+  background-size: cover;
+  background-position: center;
+
+  // Maintain font.
+  pre {
+    margin: 0;
+    text-align: left;
+  }
+}
+
+
+.portrait-portrait--bodytext-wrapper {
+  background: rgba(0,0,0,0);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+
+.portrait-portrait--title-wrapper {
+  position: absolute;
+  width: 100%;
+  height: 33vw;
+  bottom: 0;
+  margin-bottom: 33%;
+}
+
+
+.portrait-portrait--title {
+  @extend %inline-textarea;
+
+  &.has-placeholder {
+    @extend %show-placeholder-text;
+  }
+
+  font-family: "Conv_TipoType - Brother-1816-ExtraBold", sans-serif;
+  font-size: 200%;
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+
+.portrait-portrait--bodytext-wrapper-inner {
+  position: absolute;
+  width: 100%;
+  margin-bottom: 33%;
+  height: 0;
+  bottom: 0;
+  overflow: visible;
+}
+
+
+.portrait-portrait--bodytext {
+  @extend %inline-textarea;
+
+  &.has-placeholder {
+    @extend %show-placeholder-text;
+  }
+
+  font-family: "Conv_TipoType - Brother-1816-Book", sans-serif;
+  font-size: 90%;
+
+  position: absolute;
+  left: 0;
+  padding-left: 5%;
+  padding-right: 5%;
+  top: 0;
+}
+
+
+.portrait-portrait--bodytext-tile-1 {
+  position: absolute;
+  left: 0%;
+  bottom: 0%;
+  width: 33%;
+  padding-bottom: 33%;
+  margin-bottom: 33%;
+  background: rgba(15, 36, 54, 0.95);
+}
+
+.portrait-portrait--bodytext-tile-2 {
+  position: absolute;
+  left: 33%;
+  bottom: 0%;
+  width: 33%;
+  padding-bottom: 33%;
+  margin-bottom: 33%;
+  background: rgba(15, 36, 54, 0.85);
+}
+
+.portrait-portrait--bodytext-tile-3 {
+  position: absolute;
+  left: 66%;
+  bottom: 0%;
+  width: 34%;
+  padding-bottom: 33%;
+  margin-bottom: 33%;
+  background: rgba(15, 36, 54, 0.60);
+}
+
+.portrait-portrait--bodytext-tile-4 {
+  position: absolute;
+  left: 0%;
+  bottom: 0%;
+  width: 33%;
+  padding-top: 33%;
+  padding-bottom: 0%;
+  background: rgba(15, 36, 54, 0.85);
+}
+
+.portrait-portrait--bodytext-tile-5 {
+  position: absolute;
+  left: 33%;
+  bottom: 0%;
+  width: 33%;
+  padding-top: 33%;
+  padding-bottom: 0%;
+  background: rgba(15, 36, 54, 0.60);
+}
+
+.portrait-portrait--bodytext-tile-6 {
+  position: absolute;
+  left: 66%;
+  bottom: 0%;
+  width: 34%;
+  padding-top: 33%;
+  padding-bottom: 0%;
+  background: rgba(15, 36, 54, 0.95);
+}
+
+.portrait-portrait--background-image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  object-fit: cover;
+}

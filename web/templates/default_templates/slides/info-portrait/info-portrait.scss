@@ -1,0 +1,112 @@
+@import "compass/css3";
+@import "../../../_shared-base.scss";
+
+
+@font-face {
+  font-family: 'Conv_TipoType - Brother-1816-Book';
+  src: url('https://admin-sonderborg.teknik.local/assets/fonts/TipoType - Brother-1816-Book.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Conv_TipoType - Brother-1816-ExtraBold';
+  src: url('https://admin-sonderborg.teknik.local/assets/fonts/TipoType - Brother-1816-ExtraBold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+.info-portrait {
+  background-size: cover;
+  background-position: center;
+
+  // Maintain font.
+  pre {
+    margin: 0;
+    text-align: left;
+  }
+}
+
+
+.info-portrait--place-wrapper {
+  position: absolute;
+  width: 100%;
+  background: rgba(0,0,0,0);
+}
+
+
+.info-portrait--place-inner {
+  position: absolute;
+  margin: 0;
+  padding: 5% 5% 5% 5%;
+  text-align: left;
+  background: rgba(0,0,0,0);
+}
+
+
+.info-portrait--place {
+  @extend %inline-textarea;
+
+  &.has-placeholder {
+    @extend %show-placeholder-text;
+  }
+
+  font-family: "Conv_TipoType - Brother-1816-ExtraBold", sans-serif;
+  font-size: 70%;
+}
+
+
+.info-portrait--bodytext-wrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+
+.info-portrait--bodytext-inner {
+  background: rgba(0,0,0,0);
+  position: absolute;
+  bottom: 0;
+  padding: 5% 5% 15% 5%;
+  text-align: left;
+  background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,1));
+}
+
+
+.info-portrait--title {
+  @extend %inline-textarea;
+
+  &.has-placeholder {
+    @extend %show-placeholder-text;
+  }
+
+  font-family: "Conv_TipoType - Brother-1816-ExtraBold", sans-serif;
+  font-size: 200%;
+}
+
+
+.info-portrait--bodytext {
+  @extend %inline-textarea;
+
+  &.has-placeholder {
+    @extend %show-placeholder-text;
+  }
+
+  font-family: "Conv_TipoType - Brother-1816-Book", sans-serif;
+  font-size: 120%;
+}
+
+
+.info-portrait--background-image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  object-fit: cover;
+}

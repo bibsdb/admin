@@ -1,0 +1,66 @@
+{
+  "id": "citation-portrait",
+  "type": "slide",
+  "name": "Citat - højformat",
+  "icon": "citation-portrait.png",
+  "paths": {
+    "live": "citation-portrait.html",
+    "edit": "citation-portrait-edit.html",
+    "preview": "citation-portrait.html",
+    "css": "citation-portrait.css",
+    "js": "../../../js/baseSlide.js"
+  },
+  "orientation": "portrait",
+  "slide_type": "base",
+  "media_type": "image",
+  "script_id": "base",
+  "ideal_dimensions": {
+    "width": "1080",
+    "height": "1920"
+  },
+  "empty_options": {
+    "fontsize": "50",
+    "bgcolor": "#0f3752",
+    "overlaycolor": "rgba(0, 0, 0, 0)",
+    "quotecolor": "#ffffff",
+    "titlecolor": "#ffffff",
+    "bodytextcolor": "#ffffff",
+    "title": "",
+    "author": "",
+    "quote": "",
+    "bodytext": "",
+    "logopos": {
+      "top":"0",
+      "bottom":"auto",
+      "left":"0",
+      "right":"auto"
+    },
+    "logosize": "10%"
+  },
+  "tools": [
+    {
+      "name": "Baggrund",
+      "id": "background-editor"
+    },
+    {
+      "name": "Overlay",
+      "id": "citation-portrait-overlay-editor"
+    },
+    {
+      "name": "Logo",
+      "id": "logo-editor"
+    },
+    {
+      "name": "Citat",
+      "id": "citation-portrait-quote-editor"
+    },
+    {
+      "name": "Titel",
+      "id": "citation-portrait-title-editor"
+    },
+    {
+      "name": "Brødtekst",
+      "id": "citation-portrait-bodytext-editor"
+    }
+  ]
+}

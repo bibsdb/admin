@@ -1,0 +1,169 @@
+@import "compass/css3";
+@import "../../../_shared-base.scss";
+
+
+@font-face {
+  font-family: 'Conv_TipoType - Brother-1816-Book';
+  src: url('https://admin-sonderborg.teknik.local/assets/fonts/TipoType - Brother-1816-Book.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Conv_TipoType - Brother-1816-Book-Italic';
+  src: url('https://admin-sonderborg.teknik.local/assets/fonts/TipoType - Brother-1816-Book-Italic.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Conv_TipoType - Brother-1816-ExtraBold';
+  src: url('https://admin-sonderborg.teknik.local/assets/fonts/TipoType - Brother-1816-ExtraBold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+.citation-portrait {
+  background-size: cover;
+  background-position: center;
+
+  // Maintain font.
+  pre {
+    margin: 0;
+    text-align: left;
+  }
+}
+
+
+.citation-portrait--quote-wrapper {
+  position: relative;
+  width: 100%;
+  height: 85%;
+  margin: 0;
+  padding: 0;
+  background-color: #999999;
+}
+
+
+.citation-portrait--quote-inner {
+  background: rgba(0,0,0,0);
+  position: absolute;
+  bottom: 5%;
+  color: $white;
+  margin: 0;
+  padding: 5% 10% 5% 5%;
+  text-align: left;
+}
+
+
+.citation-portrait--quote {
+  @extend %inline-textarea;
+
+  &.has-placeholder {
+    @extend %show-placeholder-text;
+  }
+
+  font-family: "Conv_TipoType - Brother-1816-Book-Italic", sans-serif;
+  font-size: 100%;
+  margin: 0.25em 0;
+  padding: 0.35em 40px;
+  line-height: 1.45;
+  position: relative;
+}
+
+
+.citation-portrait--quote:before {
+  font-family: "Conv_TipoType - Brother-1816-Book-Italic", sans-serif;
+  font-size: 200%;
+  display: block;
+  padding-left: 10px;
+  content: "\201C";
+  position: absolute;
+  left: -15px;
+  top: -20px;
+}
+
+
+.citation-portrait--author {
+  @extend %inline-textarea;
+
+  &.has-placeholder {
+    @extend %show-placeholder-text;
+  }
+
+  font-family: "Conv_TipoType - Brother-1816-Book-Italic", sans-serif;
+  font-size: 80%;
+
+  margin: 0.25em 0;
+  padding: 0.35em 5%;
+  line-height: 1.45;
+  position: relative;
+}
+
+
+.citation-portrait--bodytext-wrapper {
+  position: relative;
+  width: 100%;
+  height: 15%;
+  bottom: 0;
+  margin: 0;
+  padding: 0;
+}
+
+
+.citation-portrait--bodytext-inner {
+  background: rgba(0,0,0,0);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 5%;
+  width: 65%;
+  text-align: left;
+}
+
+
+.citation-portrait--title {
+  @extend %inline-textarea;
+
+  &.has-placeholder {
+    @extend %show-placeholder-text;
+  }
+
+  font-family: "Conv_TipoType - Brother-1816-ExtraBold", sans-serif;
+  font-size: 70%;
+}
+
+
+.citation-portrait--bodytext {
+  @extend %inline-textarea;
+
+  &.has-placeholder {
+    @extend %show-placeholder-text;
+  }
+
+  font-family: "Conv_TipoType - Brother-1816-Book", sans-serif;
+  font-size: 70%;
+}
+
+
+.citation-portrait--background-image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  object-fit: cover;
+}
+
+
+.citation-portrait--logo {
+  position: absolute;
+  width: 25%;
+  bottom: 0;
+  right: 2%;
+  margin-bottom: 2%;
+  object-fit: cover;
+}

@@ -1,0 +1,38 @@
+{
+  "id": "sonderborg-calendar",
+  "type": "slide",
+  "name": "Sonderborg kalender",
+  "icon": "sonderborg-calendar.png",
+  "paths": {
+    "live": "sonderborg-calendar.html",
+    "edit": "sonderborg-calendar-edit.html",
+    "preview": "sonderborg-calendar.html",
+    "css": "sonderborg-calendar.css",
+    "js": "../../../js/baseSlide.js"
+  },
+  "orientation": "portrait",
+  "slide_type": "base",
+  "media_type": "image",
+  "script_id": "base",
+  "ideal_dimensions": {
+    "width": "1080",
+    "height": "1920"
+  },
+  "empty_options": {
+    "fontsize": "50",
+    "headline": "",
+    "text": "",
+    "displayitems": "20",
+    "eventitems": []
+  },
+  "tools": [
+    {
+      "name": "Kalendar",
+      "id": "sonderborg-calendar-editor"
+    },
+    {
+      "name": "Opsætning",
+      "id": "sonderborg-calendar-displayitems"
+    }
+  ]
+}

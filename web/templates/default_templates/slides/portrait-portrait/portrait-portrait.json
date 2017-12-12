@@ -1,0 +1,44 @@
+{
+  "id": "portrait-portrait",
+  "type": "slide",
+  "name": "Portræt - højformat",
+  "icon": "portrait-portrait.png",
+  "paths": {
+    "live": "portrait-portrait.html",
+    "edit": "portrait-portrait-edit.html",
+    "preview": "portrait-portrait.html",
+    "css": "portrait-portrait.css",
+    "js": "../../../js/baseSlide.js"
+  },
+  "orientation": "portrait",
+  "slide_type": "base",
+  "media_type": "image",
+  "script_id": "base",
+  "ideal_dimensions": {
+    "width": "1080",
+    "height": "1920"
+  },
+  "empty_options": {
+    "fontsize": "50",
+    "bgcolor": "#ffffff",
+    "backgroundcolor": "#ffffff",
+    "titlecolor": "#9999ff",
+    "bodytextcolor": "#000000",
+    "title": "",
+    "bodytext": ""
+  },
+  "tools": [
+    {
+      "name": "Baggrund",
+      "id": "background-editor"
+    },
+    {
+      "name": "Titel",
+      "id": "portrait-portrait-title-editor"
+    },
+    {
+      "name": "Brødtekst",
+      "id": "portrait-portrait-bodytext-editor"
+    }
+  ]
+}

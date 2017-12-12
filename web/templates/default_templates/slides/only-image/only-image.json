@@ -15,8 +15,8 @@
   "media_type": "image",
   "script_id": "base",
   "ideal_dimensions": {
-    "width": "1920",
-    "height": "1080"
+    "width": "1080",
+    "height": "1920"
   },
   "empty_options": {
     "bgcolor": "#ccc",
